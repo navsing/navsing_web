@@ -1,0 +1,276 @@
+body {
+  font-family: "Avenir Next", -apple-system, system-ui, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Ubuntu;
+  background: #fafafa;
+}
+
+.root {
+  margin: 0px auto;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.main {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 64px 0;
+  align-items: center;
+  /* height: 100vh; */
+}
+
+.mainCards {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  /* height: 100vh; */
+}
+
+.mainFooter {
+  margin: 64px 0;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.cardsText {
+  width: 480px;
+}
+
+@media screen and (max-width: 480px) {
+  .main {
+    margin: 64px 64px;
+  }
+
+  .cardsText {
+    order: 0;
+  }
+
+  .cardsPhone {
+    order: 1;
+  }
+
+  .phone {
+    width: 248px;
+    height: 537px;
+    border-radius: 8px;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .mainCards {
+    margin-top: 128px;
+  }
+  .cardsText {
+    order: 0;
+  }
+
+  .cardsPhone {
+    order: 1;
+  }
+}
+/* .footerText {
+    width: 100%;
+    background: grey;
+    bottom: 0;
+    height: 20%;
+  } */
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+  max-width: 375px;
+  margin: 0 auto;
+  padding: 10px 60px;
+
+  margin-bottom: 100px;
+}
+
+.feather-icons {
+  width: 50px;
+  cursor: pointer;
+  height: 50px;
+}
+
+footer {
+  background-color: #348cb2;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sign-up-beta {
+  font-size: 24px;
+  font-weight: 600;
+  padding: 16px;
+  background-color: white;
+  color: #348cb2;
+  cursor: pointer;
+  border-radius: 12px;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03);
+  transition: 0.35s;
+}
+
+.sign-up-beta:hover {
+  background-color: black;
+  color: white;
+}
+
+.terms {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.link {
+  margin-top: 32px;
+  font-weight: 600;
+  padding: 32px;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+}
+
+.phone {
+  background: #ffffff;
+  border-radius: 32px;
+  width: 375px;
+  height: 812px;
+  background-size: cover;
+  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.2), 0 40px 100px rgba(0, 0, 0, 0.4);
+  transition: 0.5s;
+}
+
+.phone.conference {
+  background-image: url(../css/images/screenshots/conferenceHome.png);
+}
+
+.phone.recreate {
+  background-image: url(../css/images/screenshots/recreate.png);
+}
+
+.phone.letters {
+  background-image: url(../css/images/screenshots/letters.png);
+}
+
+.phone.careerplant {
+  background-image: url(../css/images/screenshots/careerplant.png);
+}
+
+.phone.thew {
+  background-image: url(../css/images/screenshots/thewdaily.png);
+}
+
+.phone.blockparty {
+  background-image: url(../css/images/screenshots/blockparty.png);
+}
+
+.phone.dwell {
+  background-image: url(../css/images/screenshots/dwell.png);
+}
+
+.phone.ambience {
+  background-image: url(../css/images/screenshots/ambience.png);
+}
+
+@media screen and (max-width: 1280px) {
+  .phone {
+    width: 337px;
+    height: 730px;
+    border-radius: 32px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .phone {
+    width: 248px;
+    height: 537px;
+    border-radius: 32px;
+  }
+}
+
+#bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+section {
+  text-align: center;
+}
+
+h2 {
+  font-size: 2em;
+  font-weight: 600;
+  color: #348cb2;
+  opacity: 0.5;
+}
+
+h3 {
+  font-size: 1em;
+  color: #348cb2;
+  width: 480px;
+}
+
+hr {
+  margin: 0 0 64px 0;
+  border-top: none;
+}
+
+img {
+  width: 180px;
+  height: 180px;
+}
+
+h1 {
+  font-size: 4.35em;
+  font-weight: 600;
+  letter-spacing: -0.035em;
+  line-height: 1em;
+  color: #348cb2;
+}
+
+p {
+  color: #348cb2;
+  width: 500px;
+}
+
+@media screen and (max-width: 1280px) {
+  h1 {
+    font-size: 3.75em;
+  }
+  h2 {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  section {
+    margin: 24px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 3em;
+  }
+
+  h2 {
+    font-size: 1em;
+  }
+}
